@@ -17,8 +17,10 @@
 /*    float: left;*/
 /*}*/
 
-*{
+*{                            /* to all */
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*grid layout technique*/
@@ -40,6 +42,21 @@
     float: left;
     border: 1px solid gray;
 }
+
+.row:after{        /* pseudo element: it'll work after class */
+    content: '';
+    clear: both;    /*make new seprate line*/
+    display: block;  /* applied as specific blocks */
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.bg-red{ background-color: red; }
+.bg-green{ background-color: green; }
 
 .h-200{height: 200px;}
 .h-050{height: 050px;}
