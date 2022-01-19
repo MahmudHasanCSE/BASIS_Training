@@ -1,0 +1,54 @@
+
+*{                               /* to all */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row:after{                    /* Pseudo Element: It'll work after class */
+    content: '';
+    clear: both;               /* Makes new separate line */
+    display: block;            /* Applied as specific blocks */
+}
+
+/* Grid Layout Technique */
+
+.col-01{ width: 08.33%; }
+.col-02{ width: 16.66%; }
+.col-03{ width: 25%; }
+.col-04{ width: 33.33%; }
+.col-05{ width: 41.66%; }
+.col-06{ width: 50%; }
+.col-07{ width: 58.33%; }
+.col-08{ width: 66.66%; }
+.col-09{ width: 75%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.66%; }
+.col-12{ width: 100%; }
+
+[class*='col-']{
+    float: left;
+    border: 1px solid gray;
+}
+
+.h-040{ height: 040px; }
+.h-050{ height: 050px; }
+.h-200{ height: 200px; }
+.h-250{ height: 250px; }
+.h-600{ height: 600px; }
+
+.bg-wheat{ background-color: wheat; }
+.bg-beige{ background-color: beige; }
+
+.text-center{
+    text-align: center;
+}
+
+
+
