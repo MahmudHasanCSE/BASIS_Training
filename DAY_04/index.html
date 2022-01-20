@@ -16,10 +16,10 @@
 
     <section class="bg-wheat text-center test">
         <div class="container">
-            <div class="row">
+            <div class="row p-relative">
                 <div class="col-03 h-200 col-m06"><img src="https://styles.redditmedia.com/t5_2uakt/styles/communityIcon_fmttas2xiy351.png" alt="LOGO" width=100% height="200"></div>
                 <div class="col-06 h-200 col-m12"><img src="https://laravelnews.imgix.net/images/first-laravel-app.png?ixlib=php-3.3.1" alt="BANNER" width=100% height="200"></div>
-                <div class="col-03 h-200 col-m06">SEARCH</div>
+                <div class="col-03 h-200 col-m06 search-position-tab">SEARCH</div>
             </div>
         </div>
     </section>
@@ -35,7 +35,15 @@
     <section class="bg-wheat text-center">
         <div class="container">
             <div class="row">
-                <div class="col-02 h-600 col-m04">L. SIDEBAR</div>
+                <div class="col-02 h-600 col-m04">
+                    <div class="row">        <!-- wrap with row, immediat parent of column is row -->
+                        <div class="col-06 h-200"></div>
+                        <div class="col-06 h-200"></div>
+                        <div class="col-12 h-200"></div>
+                        <div class="col-06 h-200"></div>
+                        <div class="col-06 h-200"></div>
+                    </div>
+                </div>
                 <div class="col-08 h-600 col-m8">MAIN CONTENT</div>
                 <div class="col-02 h-600 md-none">R. SIDEBAR</div>
             </div>
