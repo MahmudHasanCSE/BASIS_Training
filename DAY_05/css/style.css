@@ -1,94 +1,10 @@
-
-*{                               /* to all */
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+.my-caption{
+    /*position: relative;*/
+    bottom: 200px;
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.container{
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.row:after{                    /* Pseudo Element: It'll work after class */
-    content: '';                /* New Start */
-    clear: both;               /* Makes new separate line */
-    display: block;            /* Applied as specific blocks */
-}
-
-/* Grid Layout Technique */
-
-.col-01{ width: 08.33%; }
-.col-02{ width: 16.66%; }
-.col-03{ width: 25%; }
-.col-04{ width: 33.33%; }
-.col-05{ width: 41.66%; }
-.col-06{ width: 50%; }
-.col-07{ width: 58.33%; }
-.col-08{ width: 66.66%; }
-.col-09{ width: 75%; }
-.col-10{ width: 83.33%; }
-.col-11{ width: 91.66%; }
-.col-12{ width: 100%; }
-
-[class*='col-']{
-    float: left;
-    border: 1px solid gray;
-}
-
-.h-040{ height: 040px; }
-.h-050{ height: 050px; }
-.h-100{ height: 100px; }
-.h-150{ height: 150px; }
 .h-200{ height: 200px; }
-.h-250{ height: 250px; }
-.h-600{ height: 600px; }
-
-.bg-wheat{ background-color: wheat; }
-.bg-beige{ background-color: beige; }
-
-.text-center{
-    text-align: center;
-}
-
-/* media query example: to make website responsive with condition */
-/*@media screen and (min-width: 600px) and (max-width: 800px){*/
-/*    .test{ background-color: azure; }*/
-/*}*/
-
-/*@media screen and (min-width: 480px) and (max-width: 720px){*/
-/*    .test2{ background-color: lightgray; }*/
-/*}*/
-/**/
-
-/* mobile view */
-@media screen and (max-width: 520px){
-    [class*='col-']{ width: 100%; }
-}
-
-/* tab view */
-@media screen and (min-width: 521px) and (max-width: 1000px){
-    /*column for media query*/
-    .col-m01{ width: 08.33%; }
-    .col-m02{ width: 16.66%; }
-    .col-m03{ width: 25%; }
-    .col-m04{ width: 33.33%; }
-    .col-m05{ width: 41.66%; }
-    .col-m06{ width: 50%; }
-    .col-m07{ width: 58.33%; }
-    .col-m08{ width: 66.66%; }
-    .col-m09{ width: 75%; }
-    .col-m10{ width: 83.33%; }
-    .col-m11{ width: 91.66%; }
-    .col-m12{ width: 100%; }
-
-    .md-none{ display: none; }
-
-    .search-position-tab{
-        position: absolute;
-        right: 0px;
-    }
-
-    .p-relative{ position: relative; }
-}
+.h-50{ height: 50px; }

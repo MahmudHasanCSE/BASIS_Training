@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bootstrap_Practice</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <!--    <h1>This is a heading...</h1>-->
@@ -37,20 +38,55 @@
     </nav>
 
 <!--    SLIDER-->
-    <div class="carousel slide" data-ride="carousel" data-interval="2200">
+    <div class="carousel slide" data-ride="carousel" data-interval="2200" id="slider">
+        <ol class="carousel-indicators">           <!-- before inner-->
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">    <!-- must be added -->
                 <img src="img/bd_flag.png" alt="" class="w-100" style="height: 550px;"/>
+                <div class="carousel-caption my-caption">
+                    <h1>This is caption heading.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi ipsam laborum totam unde. Amet asperiores eius est eum ex hic illum laboriosam maiores minima minus, nisi, recusandae sunt temporibus.</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
             </div>
             <div class="carousel-item">    <!-- must be added -->
                 <img src="img/bn.jpg" alt="" class="w-100" style="height: 550px;"/>
+                <div class="carousel-caption my-caption">
+                    <h1>This is caption heading.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi ipsam laborum totam unde. Amet asperiores eius est eum ex hic illum laboriosam maiores minima minus, nisi, recusandae sunt temporibus.</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
             </div>
             <div class="carousel-item">    <!-- must be added -->
-                <img src="img/bd_flag.png" alt="" class="w-100" style="height: 550px;"/>
+                <img src="img/dahlia.jpeg" alt="" class="w-100" style="height: 550px;"/>
+                <div class="carousel-caption my-caption">
+                    <h1>This is caption heading.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi ipsam laborum totam unde. Amet asperiores eius est eum ex hic illum laboriosam maiores minima minus, nisi, recusandae sunt temporibus.</p>
+                    <a href="" class="btn btn-dark">Read More</a>
+                </div>
             </div>
         </div>
+        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
 
+<!--Bootstrap GRID System-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 h-200 bg-info">LOGO</div>
+                <div class="col-lg-9 col-sm-8 h-200 bg-success">BANNER</div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/jquery-3.6.0.js"></script>
