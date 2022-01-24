@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap_Practice_Day_Two</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!--Navbar Menu-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">
+        <div class="container">
+            <a href="" class="navbar-brand text-white font-weight-bolder">LOGO</a>
+            <button type="button" class="navbar-toggler border" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="" class="nav-link text-white">HOME</a></li>
+                    <li><a href="" class="nav-link text-white">ABOUT</a></li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">SERVICE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">SERVICE 01</a></li>
+                            <li><a href="" class="dropdown-item">SERVICE 02</a></li>
+                            <li><a href="" class="dropdown-item">SERVICE 03</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-link text-white">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--carousel slider-->
+    <div class="carousel slide" data-ride="carousel" data-interval="2200" id="slider">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/bd_flag.png" alt="" class="w-100 h-550"/>
+                <div class="carousel-caption my-caption">
+                    <h3>This is caption heading!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eligendi, incidunt labore molestiae rerum sit suscipit. Adipisci corporis dolorem dolores expedita facilis, ipsa, laboriosam maiores molestiae nihil quia reprehenderit tenetur.</p>
+                    <a href="" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/bn.jpg" alt="" class="w-100 h-550"/>
+                <div class="carousel-caption my-caption">
+                    <h3>This is caption heading!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias architecto at consequatur, dolorem dolorum eius esse labore molestiae nam necessitatibus nemo nisi quod ratione repellendus repudiandae tempora voluptas!</p>
+                    <a href="" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/dahlia.jpeg" alt="" class="w-100 h-550"/>
+                <div class="carousel-caption my-caption">
+                    <h3>This is caption heading!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores, ea eius id numquam quo vitae! Dignissimos hic nisi quas quasi tempore? Aspernatur at neque similique. Eos inventore labore laborum?</p>
+                    <a href="" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    CARD-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>This is card Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci, animi commodi culpa earum error laborum maxime minima nisi non nostrum placeat praesentium quos recusandae sint vel. Eligendi, quis.</p>
+                            <a href="" class="btn btn-success">Read More</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <p>This is card Footer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>This is card Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci, animi commodi culpa earum error laborum maxime minima nisi non nostrum placeat praesentium quos recusandae sint vel. Eligendi, quis.</p>
+                            <a href="" class="btn btn-success">Read More</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <p>This is card Footer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>This is card Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci, animi commodi culpa earum error laborum maxime minima nisi non nostrum placeat praesentium quos recusandae sint vel. Eligendi, quis.</p>
+                            <a href="" class="btn btn-success">Read More</a>
+                        </div>
+
+                        <div class="card-footer">
+                            <p>This is card Footer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h4>This is Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus dolorum error esse hic illum in ipsam, itaque laborum omnis, placeat porro quo quod recusandae reiciendis rem sunt, temporibus voluptatem?</p>
+                            <a href="" class="btn btn-outline-success">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h4>This is Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus dolorum error esse hic illum in ipsam, itaque laborum omnis, placeat porro quo quod recusandae reiciendis rem sunt, temporibus voluptatem?</p>
+                            <a href="" class="btn btn-outline-success">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-header">
+                            <h4>This is Header.</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus dolorum error esse hic illum in ipsam, itaque laborum omnis, placeat porro quo quod recusandae reiciendis rem sunt, temporibus voluptatem?</p>
+                            <a href="" class="btn btn-outline-success">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-body">
+                        <h3 class="text-center">This is a content.</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum maxime modi officia rem tempore! A aliquid cum cupiditate dolorem dolorum ea hic ipsam maiores, quidem quos saepe sequi ullam veritatis!</p>
+                        <a href="" class="btn btn-outline-success"> Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-body">
+                        <h3 class="text-center">This is a content.</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum maxime modi officia rem tempore! A aliquid cum cupiditate dolorem dolorum ea hic ipsam maiores, quidem quos saepe sequi ullam veritatis!</p>
+                        <a href="" class="btn btn-outline-success"> Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-body">
+                        <h3 class="text-center">This is a content.</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum maxime modi officia rem tempore! A aliquid cum cupiditate dolorem dolorum ea hic ipsam maiores, quidem quos saepe sequi ullam veritatis!</p>
+                        <a href="" class="btn btn-outline-success"> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.my-caption{
+    /*position: relative;*/
+    bottom: 200px;
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h-550{ height: 550px; }
+.h-200{ height: 200px; }
+.h-50{ height: 50px; }
