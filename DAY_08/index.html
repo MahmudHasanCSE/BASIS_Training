@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | BITM Training</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+    <section class="py-2 bg-secondary p-size">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <ul class="nav left-position">
+                        <li>
+                            <a href="" class="nav-link text-white">
+                                <i class="fas fa-phone-alt"></i>
+                                +8809612342486
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link text-white">
+                                <i class="far fa-envelope"></i>
+                                info@bitm.org.bd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav float-right right-position">
+                        <li>
+                            <a href="#myModal" class="nav-link text-white" data-toggle="modal">
+                                <i class="fas fa-user-lock"></i>
+                                Sign In
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-2 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="https://bitm.org.bd/assets/frontend/images/bitm-logo.png" alt="BITM LOGO"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button type="button" class="navbar-toggler menu-position" data-toggle="collapse" data-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">HOME</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="nav-link text-uppercase font-weight-bold dropdown-toggle" data-toggle="dropdown">All Course</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="dropdown-item text-uppercase">Training</a></li>
+                                        <li><a href="" class="dropdown-item text-uppercase">Workshop</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">SEIP</a></li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">Assessment</a></li>
+                                <li><a href="" class="nav-link text-uppercase font-weight-bold">About US</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="https://bitm.org.bd/assets/frontend/images/basis_logo.png" class="h-50 float-right" alt="BASIS LOGO"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    MODAL-->
+    <section class="py-2 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info">Click ME</button>
+                    <!--                    MODAL-->
+                    <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>Sign In</h4>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card card-body border-0">
+                                        <div class="mx-auto">
+                                            <a href=""><i class="fab fa-3x fa-facebook-square"></i></a>
+                                            <a href=""><i class="fab fa-3x fa-google-plus-square text-danger"></i></a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="example@example.com"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" placeholder="Your Password"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-outline-success btn-block" value="Login" placeholder=""example@example.com/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>This is modal footer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

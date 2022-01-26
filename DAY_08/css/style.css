@@ -1,0 +1,50 @@
+.my-caption{
+    /*position: relative;*/
+    bottom: 200px;
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h-550{ height: 550px; }
+.h-300{ height: 300px; }
+.h-200{ height: 200px; }
+.h-165{ height: 165px; }
+.h-50{ height: 50px!important; }
+
+.p-size{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 700px){
+    .menu-position{
+        position: relative;
+        bottom: 50px;
+        left: 430px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu-position{
+        position: relative;
+        bottom: 50px;
+        left: 390px;
+    }
+    /*.header-contact{*/
+    /*    width: 100%!important;*/
+    /*}*/
+    /*.header-signIn{*/
+    /*    width: 100%!important;*/
+    /*    float: none!important;*/
+    /*}*/
+
+    .right-position{
+        margin-left: 35%;
+        float: none!important;
+    }
+
+    .left-position{
+        margin-left: 13%;
+    }
+
+}
