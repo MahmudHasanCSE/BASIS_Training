@@ -80,12 +80,114 @@
         </div>
     </section>
 
-    <!--    MODAL-->
-    <section class="py-2 bg-secondary">
+    <!--    MODAL   -->
+    <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info">Click ME</button>
+<!--                    NAV TABS          -->
+                    <ul class="nav nav-tabs py-5 nav-justified">
+                        <li class="nav-item">
+                            <a href="#home" data-toggle="tab" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" data-toggle="tab" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" data-toggle="tab" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="about">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                    </div>
+
+<!--                    Nav Pills-->
+                    <ul class="nav nav-pills py-5 nav-justified">
+                        <li class="nav-item">
+                            <a href="#home1" data-toggle="pill" class="nav-link active">Home one</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about1" data-toggle="pill" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact1" data-toggle="pill" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home1">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="about1">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact1">
+                            <div class="card card-body">
+                                <h1>This is tab one heading.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi error expedita fuga id libero, magni neque officiis quae quibusdam quod ratione, sit, sunt. Accusamus nemo nulla qui quisquam temporibus!</p>
+                            </div>
+                        </div>
+                    </div>
+
+<!--                    Accordion-->
+                    <section class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="accordion" id="bitm">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a href="#div1" data-toggle="collapse">Click ME</a>
+                                            </div>
+                                            <div id="div1" class="collapse show" data-parent="#bitm">
+                                                <div class="card-body">
+                                                    <h1>This is a heading.</h1>
+                                                    <p>This is a  paragraph.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a href="#div2" data-toggle="collapse">Click ME</a>
+                                            </div>
+                                            <div id="div2" class="collapse" data-parent="#bitm">
+                                                <div class="card-body">
+                                                    <h1>This is a heading.</h1>
+                                                    <p>This is a  paragraph.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
                     <!--                    MODAL-->
                     <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false">
                         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -111,6 +213,9 @@
                                             <input type="password" class="form-control" placeholder="Your Password"/>
                                         </div>
                                         <div class="form-group">
+                                            <a href="" class="float-right text-success">Forgot Password ?</a>
+                                        </div>
+                                        <div class="form-group">
                                             <input type="submit" class="btn btn-outline-success btn-block" value="Login" placeholder=""example@example.com/>
                                         </div>
                                     </div>
@@ -125,6 +230,7 @@
             </div>
         </div>
     </section>
+
 
 
     <script src="js/jquery-3.6.0.js"></script>
