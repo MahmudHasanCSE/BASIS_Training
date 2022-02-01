@@ -15,8 +15,8 @@
         <div class="container">
             <a href="" class="navbar-brand">LOGO</a>
             <ul class="navbar-nav">
-                <li><a href="" class="nav-link">Example one</a></li>
-                <li><a href="" class="nav-link">Example two</a></li>
+                <li><a href="" class="nav-link">Calculator</a></li>
+                <li><a href="" class="nav-link">Series</a></li>
             </ul>
         </div>
     </nav>
@@ -26,31 +26,46 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <div class="card">
-                        <div class="card-header">Please fill up</div>
+                        <div class="card-header">My Calculator</div>
                         <div class="card-body">
                             <form action="action.php" method="POST">
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">First Name</label>
+                                    <label class="col-form-label col-md-3">First Number</label>
                                     <div class="col-md-9">
-                                        <input type="text" name="first_name" class="form-control"/>
+                                        <input type="number" name="first_number" required class="form-control"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Last Name</label>
+                                    <label class="col-form-label col-md-3">Second Number</label>
                                     <div class="col-md-9">
-                                        <input type="text" name="last_name" class="form-control"/>
+                                        <input type="number" name="second_number" required class="form-control"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Full Name</label>
+                                    <label class="col-form-label col-md-3">Select Action</label>
                                     <div class="col-md-9">
-                                        <input type="text" value="<?php echo isset($result) ? $result : ''; ?>" class="form-control"/>
+                                        <label><input type="radio" name="operator" checked value="+"/> Addition </label>
+                                        <label><input type="radio" name="operator" value="-"/> Subtraction </label>
+                                        <label><input type="radio" name="operator" value="*"/> Multiplication </label>
+                                        <label><input type="radio" name="operator" value="/"/> Division </label>
+                                        <label><input type="radio" name="operator" value="%"/> Reminder </label>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
+                                    <label class="col-form-label col-md-3">Result</label>
                                     <div class="col-md-9">
-                                        <input type="submit" name="btn" class="btn btn-outline-success" value="Submit"/>
+                                        <input type="text" value="<?php echo isset($result) ? $result : ''; ?>" readonly class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-3"></label>
+                                    <div class="col-md-9">
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="+"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="-"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="*"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="/"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="%"/>-->
+                                        <input type="submit" name="btn" class="btn btn-outline-success" value="submit"/>
                                     </div>
                                 </div>
                             </form>
