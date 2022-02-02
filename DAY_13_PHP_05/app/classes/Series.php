@@ -36,7 +36,18 @@ class Series
     {
         if ($this->startingNumber > $this->endingNumber)
         {
-            return $this->bigToSmallSeries();
+            if ($this->oddEven == 'odd')
+            {
+                return $this->bigToSmallOddSeries();
+            }
+            else if ($this->oddEven == 'even')
+            {
+                return $this->bigToSmallEvenSeries();
+            }
+            else
+            {
+                return $this->bigToSmallSeries();
+            }
         }
         else
         {
@@ -55,6 +66,7 @@ class Series
         }
     }
 
+//    SmallToBig
     protected function smallToBigOddSeries()
     {
         for ($this->i = $this->startingNumber; $this->i <= $this->endingNumber; $this->i++)
@@ -84,6 +96,31 @@ class Series
         for ($this->i = $this->startingNumber; $this->i <= $this->endingNumber; $this->i++)
         {
             $this->result .= $this->i.' ';
+        }
+        return $this->result;
+    }
+
+//    BigToSmall
+    protected function bigToSmallOddSeries()
+    {
+        for ($this->i = $this->startingNumber; $this->i >= $this->endingNumber; $this->i--)
+        {
+            if($this->i % 2 != 0)
+            {
+                $this->result .= $this->i.' ';
+            }
+        }
+        return $this->result;
+    }
+
+    protected function bigToSmallEvenSeries()
+    {
+        for ($this->i = $this->startingNumber; $this->i >= $this->endingNumber; $this->i--)
+        {
+            if($this->i % 2 == 0)
+            {
+                $this->result .= $this->i.' ';
+            }
         }
         return $this->result;
     }
