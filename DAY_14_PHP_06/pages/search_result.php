@@ -28,14 +28,12 @@
                             </tr>
                             </thead>
                             <tbody>
-<!--                            --><?php //foreach ($students as $student) { ?>
                                 <tr>
                                     <td><?php echo $result['name']; ?></td>
                                     <td><?php echo $result['mobile']; ?></td>
                                     <td><?php echo $result['email']; ?></td>
                                     <td><?php echo $result['address']; ?></td>
                                 </tr>
-<!--                            --><?php //} ?>
                             </tbody>
                         </table>
                         <?php } else { ?>
