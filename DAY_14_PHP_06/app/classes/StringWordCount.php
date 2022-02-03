@@ -3,14 +3,13 @@ namespace App\classes;
 
 class StringWordCount
 {
-    protected $givenString;
+    protected $string;
     protected $word;
     protected $character;
-    protected $result;
 
     public function __construct($post=null)
     {
-        $this->givenString = $post['given_string'];
+        $this->string = $post['string'];
     }
 
     public function index()
@@ -18,15 +17,15 @@ class StringWordCount
         header('Location: pages/index.php');
     }
 
-    public function wordCount()
+    public function getWordString()
     {
-        $this->word = str_word_count($this->givenString);
-        return $this->word;
-    }
-
-    public function characterCount()
-    {
-        $this->character = strlen($this->givenString);
-        return $this->character;
+//        echo $this->string;
+        $this->word      = str_word_count($this->string);
+        $this->character = strlen($this->string);
+        return [
+            'word'      => $this->word,
+            'character' => $this->character,
+            'string'    => $this->string,
+        ];
     }
 }
