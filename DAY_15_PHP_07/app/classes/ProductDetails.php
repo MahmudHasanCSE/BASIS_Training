@@ -1,15 +1,16 @@
 <?php
 namespace App\classes;
+require_once 'vendor/autoload.php';
+use App\classes\Product;
 
-class ProductDetails
+
+class ProductDetails extends Product
 {
-    public function __construct()
-    {
-//        header('Location: pages/product_view');
-    }
-
-    public function index()
-    {
-        header('Location: pages/product_view');
+    public function getProductDetails($key=''){
+        return array_filter($this->data,function($element) use($key){
+            if($element['ID'] === $key){
+                return $element;
+            }
+        });
     }
 }

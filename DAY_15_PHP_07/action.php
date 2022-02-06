@@ -4,6 +4,7 @@ use App\classes\Home;
 use App\classes\PasswordGenerator;
 use App\classes\Blog;
 use App\classes\Product;
+use App\classes\ProductDetails;
 
 if (isset($_GET['pages']))
 {
@@ -11,9 +12,9 @@ if (isset($_GET['pages']))
     {
         include 'pages/home.php';
     }
-    elseif ($_GET['pages'] == 'password-reset')
+    elseif ($_GET['pages'] == 'password-generator')
     {
-        include 'pages/password-reset.php';
+        include 'pages/password-generator.php';
     }
     elseif ($_GET['pages'] == 'blog')
     {
@@ -21,24 +22,23 @@ if (isset($_GET['pages']))
         $blogs = $blog->getAllBlog();
         include 'pages/blog.php';
     }
-    elseif ($_GET['pages'] == 'product')
+    elseif ($_GET['pages'] == 'products')
     {
         $product  = new Product();
         $products = $product->getAllProduct();
         include 'pages/product.php';
+    }
+    elseif ($_GET['pages']=='product_details'){
+        $productDetail = new ProductDetails();
+        $productDetails = $productDetail->getProductDetails($_GET['id']);
+        include 'pages/product_details.php';
     }
 }
 elseif (isset($_POST['btn']))
 {
     $passwordGenerator = new PasswordGenerator($_POST);
     $result = $passwordGenerator ->newPassword();
-    include 'pages/password-reset.php';
-}
-elseif (isset($_POST['product_btn']))
-{
-    $product = new Product();
-    $products = $product->getAllProduct();
-    include 'pages/product_view.php';
+    include 'pages/password-generator.php';
 }
 else {
     $home = new Home();
