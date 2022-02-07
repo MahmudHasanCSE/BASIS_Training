@@ -24,5 +24,16 @@
             </div>
         </div>
     </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div>
+                        <?php echo isset($result) ? $result : ''; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php include 'footer.php'; ?>

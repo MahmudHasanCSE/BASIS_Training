@@ -15,7 +15,7 @@
             <a href="" class="navbar-brand">LOGO</a>
             <ul class="navbar-nav">
                 <li><a href="action.php?pages=" class="nav-link">P1</a></li>
-                <li><a href="action.php?pages=" class="nav-link">P2</a></li>
+                <li><a href="action.php?pages=file-upload" class="nav-link">File Upload</a></li>
                 <li><a href="action.php?pages=product" class="nav-link">All Product</a></li>
                 <li><a href="?pages=pattern" class="nav-link">Pattern</a></li>
             </ul>
