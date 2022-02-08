@@ -1,0 +1,1 @@
+new blog, Mahmud Al Hasan, none, ./assets/img/upload/a1.jpg$Title, Name, None, ./assets/img/upload/a2.jpg$Title, Name, none, ./assets/img/upload/a3.jpg$
