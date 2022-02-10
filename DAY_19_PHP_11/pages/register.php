@@ -7,37 +7,38 @@
                     <div class="card">
                         <div class="card-header bg-dark text-light">Registration Form</div>
                         <div class="card-body bg-dark text-light">
+                            <h4><?php echo isset($message) ? $message : ''; ?></h4>
                             <form action="action.php" method="POST">
 
                                 <div class="form-group row">
                                     <label class="col-md-3">Full Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="full_name" required placeholder="Full Name"/>
+                                        <input type="text" class="form-control" name="full_name" placeholder="Full Name"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3">Email Address</label>
                                     <div class="col-md-9">
-                                        <input type="email" class="form-control" name="email" required placeholder="Email Address"/>
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3">Phone Number</label>
                                     <div class="col-md-9">
-                                        <input type="number" class="form-control" name="mobile" required placeholder="Phone Number"/>
+                                        <input type="number" class="form-control" name="mobile" placeholder="Phone Number"/>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3">Subject</label>
-                                    <div class="col-md-9">
-                                        <label><input type="checkbox" name="subject[]" value="Bengali"/> Bengali </label>
-                                        <label><input type="checkbox" name="subject[]" value="English"/> English </label>
-                                        <label><input type="checkbox" name="subject[]" value="Math"/> Math </label>
-                                        <label><input type="checkbox" name="subject[]" value="Physics"/> Physics </label>
-                                        <label><input type="checkbox" name="subject[]" value="Chemistry"/> Chemistry </label>
-                                        <label><input type="checkbox" name="subject[]" value="Biology"/> Biology </label>
-                                    </div>
-                                </div>
+<!--                                <div class="form-group row">-->
+<!--                                    <label class="col-md-3">Subject</label>-->
+<!--                                    <div class="col-md-9">-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="Bengali"/> Bengali </label>-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="English"/> English </label>-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="Math"/> Math </label>-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="Physics"/> Physics </label>-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="Chemistry"/> Chemistry </label>-->
+<!--                                        <label><input type="checkbox" name="subject[]" value="Biology"/> Biology </label>-->
+<!--                                    </div>-->
+<!--                                </div>-->
                                 <div class="form-group row">
                                     <label class="col-md-3"></label>
                                     <div class="col-md-9">
