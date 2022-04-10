@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="container">
+
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Enter Height</th>
+                <td><input type="number" id="height"></td>
+            </tr>
+            <tr>
+                <th>Enter Width</th>
+                <td><input type="number" id="width"></td>
+            </tr>
+            <tr>
+                <th>Enter Background Color</th>
+                <td><input type="color" id="backgroundcolor"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><button type="button" id="btn">Create New Div</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // document.write('Hello JavaScript');
+        // console.log('hello JavaScript');
+        // window.alert('Hello JavaScript');
+        // alert('Hello JavaScript'); // belongs to window class, works without typing class
+        // document.write('<h1>Hello JavaScript</h1>');
+
+        // var name = 'BASIS';
+        // document.write(name);
+
+        // var firstName = 'BASIS';
+        // var lastName = 'BASIS';
+
+        // document.write(firstName+'<br/>'+lastName);
+
+        // var x = 100;
+        // var y = 30;
+        // var z = x + y;
+
+        // if (x > y)
+        // {
+        //     document.write('Hello World')
+        // }
+
+        // for (i=1; i<=3; i++)
+        // {
+        //     document.write('hello world.<br/>');
+        // }
+
+        // var data = [10, 20 , 30, 'BASIS', true, 100.001];
+        // document.write(data[5]);
+        // for (key in data)
+        // {
+        //     document.write(data[key]+'<br/>')
+        // }
+
+        // var student = {
+        //     'name'   : 'Max',
+        //     'mobile' : '0987654321',
+        //     'email'  : 'max@email.com',
+        // }  // js object
+
+        // document.write(student.name+'<br/>'+student.email+'<br/>'+student.mobile);
+
+        // var student = [
+        //     {
+        //         'name'   : 'Max',
+        //         'mobile' : '0987654321',
+        //         'email'  : 'max@email.com',
+        //     },
+        //     {
+        //         'name'   : 'Bob',
+        //         'mobile' : '0987654321',
+        //         'email'  : 'bob@email.com',
+        //     },
+        // ];
+        // document.write(student[1].name);
+        // for (key in student)
+        // {
+        //     document.write(student[key].name+' '+student[key].mobile+' '+student[key].email+'<br/>');
+        // }
+        // console.log(student);
+
+        function test(height, width, color) {
+            // var x = 10;
+            // var y = 20;
+            // var z = x + y;
+            // document.write(z);
+
+            var div = document.createElement('div');
+            div.style.height = height+'px';
+            div.style.width = width+'px';
+            div.style.backgroundColor = color;
+            var containerDiv = document.getElementById('container');
+            containerDiv.append(div);
+        }
+
+        // document.write('<br/>===============<br/>');
+        // test(10, 25);
+        // document.write('<br/>===============<br/>');
+        // test(1, 21);
+        // document.write('<br/>===============<br/>');
+        // test(2, 6);
+        // document.write('<br/>===============<br/>');
+
+        // document.write('<br/>===============<br/>');
+        // test(100, 100, 'blue');
+        // document.write('<br/>===============<br/>');
+        // test(200, 200, 'blue');
+        // document.write('<br/>===============<br/>');
+        // test(300, 300, 'blue');
+        // document.write('<br/>===============<br/>');
+
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            var height = document.getElementById('height').value;
+            var width = document.getElementById('width').value;
+            var backgroundcolor = document.getElementById('backgroundcolor').value;
+            test(height, width, backgroundcolor);
+        }
+
+
+    </script>
+</body>
+</html>
